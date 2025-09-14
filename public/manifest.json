@@ -1,10 +1,10 @@
 {
-  "name": "Dynamic Fog",
+  "name": "动态雾效",
   "version": "1.1.0",
   "manifest_version": 1,
-  "author": "Owlbear Rodeo",
+  "author": "Steven ZJH",
   "homepage_url": "https://extensions.owlbear.rodeo/dynamic-fog",
   "icon": "/logo.png",
-  "description": "Add walls, doors and lights for a simple dynamic fog experience",
+  "description": "添加墙体、门与光源，获得简单易用的动态雾效果",
   "background_url": "/background.html"
 }
