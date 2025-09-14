@@ -212,61 +212,85 @@ function MenuControls({
           />
         </FormControl>
         <FormControl fullWidth>
-          {/* 中文化：角度（整圆/半圆） */}
+          {/* 中文化：角度（整圆/视角） */}
           <SmallLabel>角度</SmallLabel>
           <ToggleButtonGroup
             exclusive
-            aria-label="angle"
+            aria-label="角度"
             size="small"
             value={angleValue}
             onChange={(_, v) => v && handleAngleChange(v)}
             fullWidth
           >
-            <ToggleButton value="FULL" aria-label="full">
-              <LightFull />
+            <ToggleButton
+              value="FULL"
+              aria-label="全向光"
+              title="全向光"
+            >
+              <LightFull titleAccess="全向光" />
             </ToggleButton>
-            <ToggleButton value="HALF" aria-label="half">
-              <LightHalf />
+            <ToggleButton
+              value="HALF"
+              aria-label="视角光"
+              title="视角光"
+            >
+              <LightHalf titleAccess="视角光" />
             </ToggleButton>
           </ToggleButtonGroup>
         </FormControl>
       </Stack>
       <Stack gap={1} direction="row" sx={{ mb: 2 }} alignItems="center">
         <FormControl fullWidth>
-          {/* 中文化：边缘（硬/软） */}
+          {/* 中文化：边缘（清晰/柔和） */}
           <SmallLabel>边缘</SmallLabel>
           <ToggleButtonGroup
             exclusive
-            aria-label="edge"
+            aria-label="边缘"
             size="small"
             value={edgeValue}
             onChange={(_, v) => v && handleEdgeChange(v)}
             fullWidth
           >
-            <ToggleButton value="HARD" aria-label="hard">
-              <LightHard />
+            <ToggleButton
+              value="HARD"
+              aria-label="清晰边缘"
+              title="清晰边缘"
+            >
+              <LightHard titleAccess="清晰边缘" />
             </ToggleButton>
-            <ToggleButton value="SOFT" aria-label="soft">
-              <LightSoft />
+            <ToggleButton
+              value="SOFT"
+              aria-label="柔和边缘"
+              title="柔和边缘"
+            >
+              <LightSoft titleAccess="柔和边缘" />
             </ToggleButton>
           </ToggleButtonGroup>
         </FormControl>
         <FormControl fullWidth>
-          {/* 中文化：类型（主/次光源） */}
+          {/* 中文化：类型（人物/环境光源） */}
           <SmallLabel>类型</SmallLabel>
           <ToggleButtonGroup
             exclusive
-            aria-label="type"
+            aria-label="类型"
             size="small"
             value={values.lightType}
             onChange={(_, v) => v && handleTypeChange(v)}
             fullWidth
           >
-            <ToggleButton value="PRIMARY" aria-label="primary">
-              <LightPrimary />
+            <ToggleButton
+              value="PRIMARY"
+              aria-label="人物光源"
+              title="人物光源"
+            >
+              <LightPrimary titleAccess="人物光源" />
             </ToggleButton>
-            <ToggleButton value="SECONDARY" aria-label="secondary">
-              <LightSecondary />
+            <ToggleButton
+              value="SECONDARY"
+              aria-label="环境光源"
+              title="环境光源"
+            >
+              <LightSecondary titleAccess="环境光源" />
             </ToggleButton>
           </ToggleButtonGroup>
         </FormControl>
@@ -276,6 +300,8 @@ function MenuControls({
           <Button
             size="small"
             fullWidth
+            aria-label="旋转"
+            title="旋转"
             onClick={() => handleRotationChange((values.rotation + 90) % 360)}
             startIcon={<Rotate />}
           >
@@ -286,6 +312,8 @@ function MenuControls({
         <Button
           size="small"
           fullWidth
+          aria-label="移除光源"
+          title="移除光源"
           onClick={async () => {
             const selection = await OBR.player.getSelection();
             if (!selection || selection.length === 0) {
