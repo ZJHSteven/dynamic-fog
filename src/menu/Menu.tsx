@@ -183,7 +183,7 @@ function MenuControls({
     <Stack px={2} py={1}>
       <Stack gap={1} direction="row" sx={{ mb: 1 }} alignItems="center">
         <FormControl fullWidth>
-          <SmallLabel>Range</SmallLabel>
+          <SmallLabel>范围</SmallLabel>
           <NumberField
             aria-label="Range"
             variant="outlined"

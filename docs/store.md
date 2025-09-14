@@ -1,5 +1,5 @@
 ---
-title: 动态雾效（汉化）
+title: 动态雾效
 description: 添加墙体、门与光源，获得简单易用的动态雾效果
 author: Steven ZJH
 image: https://raw.githubusercontent.com/ZJHSteven/dynamic-fog/main/docs/header.jpg
