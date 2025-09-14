@@ -15,7 +15,7 @@
 - 插件标识（`rodeo.owlbear.dynamic-fog/...`）保持不变，以便与上游保持兼容（如需侧载并与上游共存，建议另建分支调整 ID）。
 
 ## 可配置项（需按需更新）
-- 作者名：当前为 `Steven ZJH`（来自本地 `git config user.name`）。如需变更，请在后续提交中一并修改：
+- 作者名：当前为 `ZJHSteven`。如需变更，请在后续提交中一并修改：
   - `public/manifest.json` 的 `author` 字段
   - `docs/store.md` Front Matter 的 `author`
   - `README.md` 顶部声明中的作者/维护者信息
@@ -48,7 +48,8 @@
 - 2025-09-14：初始化 AGENTS.md，确立汉化策略与提交流程。
 - 2025-09-14：完成首批汉化：
   - `public/manifest.json` 名称/描述中文化，作者设为 `Steven ZJH`；`homepage_url` 暂保持上游。
+  - 后续修正：作者统一为 `ZJHSteven`，`homepage_url` 改为 GitHub Fork。
   - `README.md` 全量中文化，加入上游来源与汉化声明。
-  - `docs/store.md` 全量中文化；Front Matter 作者改为 `Steven ZJH`；GitHub Raw 资源改为本 Fork；非 GitHub 的 `icon/manifest/learn-more` 保持上游以待后续部署替换。
+  - `docs/store.md` 全量中文化；Front Matter 作者改为 `ZJHSteven`；GitHub Raw 资源改为本 Fork；`learn-more` 指向 Fork；非 GitHub 的 `icon/manifest` 保持上游以待后续部署替换。
   - `menu.html`、`background.html`：`lang` 改为 `zh-CN`，标题中文化。
   - `src` 内所有用户可见文案（菜单、按钮、图标名称、工具模式标签）完成中文化。

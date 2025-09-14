@@ -1,14 +1,14 @@
 ---
 title: 动态雾效
 description: 添加墙体、门与光源，获得简单易用的动态雾效果
-author: Steven ZJH
+author: ZJHSteven
 image: https://raw.githubusercontent.com/ZJHSteven/dynamic-fog/main/docs/header.jpg
 icon: https://dynamic-fog.owlbear.rodeo/logo.png
 tags:
   - built-by-owlbear
   - fog
 manifest: https://dynamic-fog.owlbear.rodeo/manifest.json
-learn-more: https://extensions.owlbear.rodeo/dynamic-fog
+learn-more: https://github.com/ZJHSteven/dynamic-fog
 ---
 
 # 动态雾效（Dynamic Fog，中文汉化版）

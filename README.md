@@ -4,7 +4,7 @@
 
 - 上游仓库：<https://github.com/owlbear-rodeo/dynamic-fog>
 - 本汉化仓库：<https://github.com/ZJHSteven/dynamic-fog>
-- 维护者（汉化）：Steven ZJH
+- 维护者（汉化）：ZJHSteven
 
 如需了解原项目的更新、问题反馈或提交新特性请求，请前往上游仓库。若与汉化相关的问题（翻译不当/错别字/未覆盖项），可在本仓库提 Issue。
 
