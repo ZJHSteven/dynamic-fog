@@ -251,7 +251,7 @@ export function createDoorMode(CanvasKit: CanvasKit) {
     icons: [
       {
         icon: doorModeIcon,
-        label: "Door",
+        label: "门",
         filter: {
           activeTools: ["rodeo.owlbear.tool/fog"],
         },

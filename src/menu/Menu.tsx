@@ -212,7 +212,8 @@ function MenuControls({
           />
         </FormControl>
         <FormControl fullWidth>
-          <SmallLabel>Angle</SmallLabel>
+          {/* 中文化：角度（整圆/半圆） */}
+          <SmallLabel>角度</SmallLabel>
           <ToggleButtonGroup
             exclusive
             aria-label="angle"
@@ -232,7 +233,8 @@ function MenuControls({
       </Stack>
       <Stack gap={1} direction="row" sx={{ mb: 2 }} alignItems="center">
         <FormControl fullWidth>
-          <SmallLabel>Edge</SmallLabel>
+          {/* 中文化：边缘（硬/软） */}
+          <SmallLabel>边缘</SmallLabel>
           <ToggleButtonGroup
             exclusive
             aria-label="edge"
@@ -250,7 +252,8 @@ function MenuControls({
           </ToggleButtonGroup>
         </FormControl>
         <FormControl fullWidth>
-          <SmallLabel>Type</SmallLabel>
+          {/* 中文化：类型（主/次光源） */}
+          <SmallLabel>类型</SmallLabel>
           <ToggleButtonGroup
             exclusive
             aria-label="type"
@@ -276,7 +279,8 @@ function MenuControls({
             onClick={() => handleRotationChange((values.rotation + 90) % 360)}
             startIcon={<Rotate />}
           >
-            Rotate
+            {/* 中文化：旋转 */}
+            旋转
           </Button>
         )}
         <Button
@@ -296,7 +300,8 @@ function MenuControls({
           color="error"
           startIcon={<LightOff />}
         >
-          Remove {isHalfAngle ? "" : "Light"}
+          {/* 中文化：移除/移除光源（半角时文案与上游保持一致的空后缀） */}
+          移除{isHalfAngle ? "" : "光源"}
         </Button>
       </Stack>
     </Stack>

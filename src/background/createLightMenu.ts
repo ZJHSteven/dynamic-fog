@@ -10,7 +10,7 @@ export function createLightMenu() {
     icons: [
       {
         icon: lightOnIcon,
-        label: "Add Light",
+        label: "添加光源",
         filter: {
           every: [
             { key: "type", value: "IMAGE" },
@@ -21,7 +21,7 @@ export function createLightMenu() {
       },
       {
         icon: lightOnIcon,
-        label: "Add Light",
+        label: "添加光源",
         filter: {
           every: [
             { key: "type", value: "SHAPE" },
@@ -60,7 +60,7 @@ export function createLightMenu() {
     icons: [
       {
         icon: lightSettingsIcon,
-        label: "Light Settings",
+        label: "光源设置",
         filter: {
           every: [
             {

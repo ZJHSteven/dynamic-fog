@@ -34,7 +34,7 @@ export function createLineMode() {
     icons: [
       {
         icon: lineModeIcon,
-        label: "Line",
+        label: "线段",
         filter: {
           activeTools: ["rodeo.owlbear.tool/fog"],
         },
