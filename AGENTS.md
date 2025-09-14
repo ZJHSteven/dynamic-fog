@@ -46,4 +46,9 @@
 
 ## 变更日志（维护者使用）
 - 2025-09-14：初始化 AGENTS.md，确立汉化策略与提交流程。
-
+- 2025-09-14：完成首批汉化：
+  - `public/manifest.json` 名称/描述中文化，作者设为 `Steven ZJH`；`homepage_url` 暂保持上游。
+  - `README.md` 全量中文化，加入上游来源与汉化声明。
+  - `docs/store.md` 全量中文化；Front Matter 作者改为 `Steven ZJH`；GitHub Raw 资源改为本 Fork；非 GitHub 的 `icon/manifest/learn-more` 保持上游以待后续部署替换。
+  - `menu.html`、`background.html`：`lang` 改为 `zh-CN`，标题中文化。
+  - `src` 内所有用户可见文案（菜单、按钮、图标名称、工具模式标签）完成中文化。
