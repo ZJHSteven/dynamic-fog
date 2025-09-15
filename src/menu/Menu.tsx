@@ -226,14 +226,14 @@ function MenuControls({
             <ToggleButton value="FULL" aria-label="全向光">
               <Tooltip title="全向光" arrow enterDelay={400} placement="top">
                 <span>
-                  <LightFull titleAccess="全向光" />
+                  <LightFull />
                 </span>
               </Tooltip>
             </ToggleButton>
             <ToggleButton value="HALF" aria-label="视角光">
               <Tooltip title="视角光" arrow enterDelay={400} placement="top">
                 <span>
-                  <LightHalf titleAccess="视角光" />
+                  <LightHalf />
                 </span>
               </Tooltip>
             </ToggleButton>
@@ -255,14 +255,14 @@ function MenuControls({
             <ToggleButton value="HARD" aria-label="清晰边缘">
               <Tooltip title="清晰边缘" arrow enterDelay={400} placement="top">
                 <span>
-                  <LightHard titleAccess="清晰边缘" />
+                  <LightHard />
                 </span>
               </Tooltip>
             </ToggleButton>
             <ToggleButton value="SOFT" aria-label="柔和边缘">
               <Tooltip title="柔和边缘" arrow enterDelay={400} placement="top">
                 <span>
-                  <LightSoft titleAccess="柔和边缘" />
+                  <LightSoft />
                 </span>
               </Tooltip>
             </ToggleButton>
@@ -282,14 +282,14 @@ function MenuControls({
             <ToggleButton value="PRIMARY" aria-label="人物光源">
               <Tooltip title="人物光源" arrow enterDelay={400} placement="top">
                 <span>
-                  <LightPrimary titleAccess="人物光源" />
+                  <LightPrimary />
                 </span>
               </Tooltip>
             </ToggleButton>
             <ToggleButton value="SECONDARY" aria-label="环境光源">
               <Tooltip title="环境光源" arrow enterDelay={400} placement="top">
                 <span>
-                  <LightSecondary titleAccess="环境光源" />
+                  <LightSecondary />
                 </span>
               </Tooltip>
             </ToggleButton>
