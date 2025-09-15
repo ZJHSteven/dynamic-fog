@@ -16,6 +16,7 @@ import FormLabel from "@mui/material/FormLabel";
 import FormControl from "@mui/material/FormControl";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import ToggleButton from "@mui/material/ToggleButton";
+import Tooltip from "@mui/material/Tooltip";
 import { LightFull } from "./icons/LightFull";
 import { LightHalf } from "./icons/LightHalf";
 import { LightSoft } from "./icons/LightSoft";
@@ -222,19 +223,19 @@ function MenuControls({
             onChange={(_, v) => v && handleAngleChange(v)}
             fullWidth
           >
-            <ToggleButton
-              value="FULL"
-              aria-label="全向光"
-              title="全向光"
-            >
-              <LightFull titleAccess="全向光" />
+            <ToggleButton value="FULL" aria-label="全向光">
+              <Tooltip title="全向光" arrow enterDelay={400} placement="top">
+                <span>
+                  <LightFull titleAccess="全向光" />
+                </span>
+              </Tooltip>
             </ToggleButton>
-            <ToggleButton
-              value="HALF"
-              aria-label="视角光"
-              title="视角光"
-            >
-              <LightHalf titleAccess="视角光" />
+            <ToggleButton value="HALF" aria-label="视角光">
+              <Tooltip title="视角光" arrow enterDelay={400} placement="top">
+                <span>
+                  <LightHalf titleAccess="视角光" />
+                </span>
+              </Tooltip>
             </ToggleButton>
           </ToggleButtonGroup>
         </FormControl>
@@ -251,19 +252,19 @@ function MenuControls({
             onChange={(_, v) => v && handleEdgeChange(v)}
             fullWidth
           >
-            <ToggleButton
-              value="HARD"
-              aria-label="清晰边缘"
-              title="清晰边缘"
-            >
-              <LightHard titleAccess="清晰边缘" />
+            <ToggleButton value="HARD" aria-label="清晰边缘">
+              <Tooltip title="清晰边缘" arrow enterDelay={400} placement="top">
+                <span>
+                  <LightHard titleAccess="清晰边缘" />
+                </span>
+              </Tooltip>
             </ToggleButton>
-            <ToggleButton
-              value="SOFT"
-              aria-label="柔和边缘"
-              title="柔和边缘"
-            >
-              <LightSoft titleAccess="柔和边缘" />
+            <ToggleButton value="SOFT" aria-label="柔和边缘">
+              <Tooltip title="柔和边缘" arrow enterDelay={400} placement="top">
+                <span>
+                  <LightSoft titleAccess="柔和边缘" />
+                </span>
+              </Tooltip>
             </ToggleButton>
           </ToggleButtonGroup>
         </FormControl>
@@ -278,43 +279,49 @@ function MenuControls({
             onChange={(_, v) => v && handleTypeChange(v)}
             fullWidth
           >
-            <ToggleButton
-              value="PRIMARY"
-              aria-label="人物光源"
-              title="人物光源"
-            >
-              <LightPrimary titleAccess="人物光源" />
+            <ToggleButton value="PRIMARY" aria-label="人物光源">
+              <Tooltip title="人物光源" arrow enterDelay={400} placement="top">
+                <span>
+                  <LightPrimary titleAccess="人物光源" />
+                </span>
+              </Tooltip>
             </ToggleButton>
-            <ToggleButton
-              value="SECONDARY"
-              aria-label="环境光源"
-              title="环境光源"
-            >
-              <LightSecondary titleAccess="环境光源" />
+            <ToggleButton value="SECONDARY" aria-label="环境光源">
+              <Tooltip title="环境光源" arrow enterDelay={400} placement="top">
+                <span>
+                  <LightSecondary titleAccess="环境光源" />
+                </span>
+              </Tooltip>
             </ToggleButton>
           </ToggleButtonGroup>
         </FormControl>
       </Stack>
       <Stack gap={1} direction="row" alignItems="center">
         {isHalfAngle && (
-          <Button
-            size="small"
-            fullWidth
-            aria-label="旋转"
-            title="旋转"
-            onClick={() => handleRotationChange((values.rotation + 90) % 360)}
-            startIcon={<Rotate />}
-          >
-            {/* 中文化：旋转 */}
-            旋转
-          </Button>
+          <Tooltip title="旋转" arrow enterDelay={400} placement="top">
+            <span>
+              <Button
+                size="small"
+                fullWidth
+                aria-label="旋转"
+                onClick={() =>
+                  handleRotationChange((values.rotation + 90) % 360)
+                }
+                startIcon={<Rotate />}
+              >
+                {/* 中文化：旋转 */}
+                旋转
+              </Button>
+            </span>
+          </Tooltip>
         )}
-        <Button
-          size="small"
-          fullWidth
-          aria-label="移除光源"
-          title="移除光源"
-          onClick={async () => {
+        <Tooltip title="移除光源" arrow enterDelay={400} placement="top">
+          <span>
+            <Button
+              size="small"
+              fullWidth
+              aria-label="移除光源"
+              onClick={async () => {
             const selection = await OBR.player.getSelection();
             if (!selection || selection.length === 0) {
               return;
@@ -324,13 +331,15 @@ function MenuControls({
                 delete item.metadata[getPluginId("light")];
               }
             });
-          }}
-          color="error"
-          startIcon={<LightOff />}
-        >
-          {/* 中文化：移除/移除光源（半角时文案与上游保持一致的空后缀） */}
-          移除{isHalfAngle ? "" : "光源"}
-        </Button>
+              }}
+              color="error"
+              startIcon={<LightOff />}
+            >
+              {/* 中文化：移除/移除光源（半角时文案与上游保持一致的空后缀） */}
+              移除{isHalfAngle ? "" : "光源"}
+            </Button>
+          </span>
+        </Tooltip>
       </Stack>
     </Stack>
   );
