@@ -45,6 +45,7 @@
 - 生产构建：`npm run build`
 
 ## 变更日志（维护者使用）
+- 2025-09-20：更新 README.md，补充 Cloudflare Pages 清单链接的安装流程，并记录 `https://dynamic-fog-6g4.pages.dev/` 作为云端预览入口，帮助新用户快速完成侧载。
 - 2025-09-14：初始化 AGENTS.md，确立汉化策略与提交流程。
 - 2025-09-14：完成首批汉化：
   - `public/manifest.json` 名称/描述中文化，作者设为 `Steven ZJH`；`homepage_url` 暂保持上游。
@@ -53,3 +54,4 @@
   - `docs/store.md` 全量中文化；Front Matter 作者改为 `ZJHSteven`；GitHub Raw 资源改为本 Fork；`learn-more` 指向 Fork；非 GitHub 的 `icon/manifest` 保持上游以待后续部署替换。
   - `menu.html`、`background.html`：`lang` 改为 `zh-CN`，标题中文化。
   - `src` 内所有用户可见文案（菜单、按钮、图标名称、工具模式标签）完成中文化。
+
