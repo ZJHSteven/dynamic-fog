@@ -12,7 +12,7 @@
 
 为方便快速体验本汉化版扩展，我们推荐优先使用 Owlbear Rodeo 自带的“Install from URL”功能进行侧载安装。下列步骤涵盖了需要准备的在线清单链接、操作流程以及常见注意事项，帮助初学者在首次接触时也能顺利完成安装。
 
-1. 复制下方最新的云端清单链接：`https://bubbles-for-owlbear-rodeo.pages.dev/manifest.json`。该链接指向我们部署在 Cloudflare Pages 的 manifest 文件，会持续与本仓库内容同步。
+1. 复制下方最新的云端清单链接：`https://dynamic-fog-6g4.pages.dev/manifest.json`。该链接指向我们部署在 Cloudflare Pages 的 manifest 文件，会持续与本仓库内容同步。
 2. 打开 Owlbear Rodeo，进入 `Extensions` 菜单，点击 `Install from URL`（从 URL 安装），在弹出的输入框中粘贴上一步复制的清单链接并确认。
 3. 安装完成后，在扩展列表中启用“Dynamic Fog（汉化版）”即可开始使用。若界面未即时更新，可刷新页面或重新加载房间。
 
